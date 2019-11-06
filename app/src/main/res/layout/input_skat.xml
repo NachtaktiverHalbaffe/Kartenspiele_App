@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/bedingunen"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/skat_gewonnen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Gewonnen" />
+
+        <CheckBox
+            android:id="@+id/skat_skat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/skat_gewonnen"
+            android:layout_centerHorizontal="true"
+            android:text="Skat genommen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pickers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bedingunen"
+        android:layout_centerHorizontal="true">
+
+        <NumberPicker
+            android:id="@+id/skat_grundwert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/skat_gewonnen"></NumberPicker>
+
+        <NumberPicker
+            android:id="@+id/skat_gewinnstufe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/skat_gewonnen"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/skat_grundwert"></NumberPicker>
+
+        <NumberPicker
+            android:id="@+id/skat_bonus"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/skat_gewonnen"
+            android:layout_toRightOf="@id/skat_gewinnstufe"></NumberPicker>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pickers"
+        tools:ignore="NotSibling">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/skat_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skat_grundwert"
+        android:layout_marginRight="3dp"
+        android:text="  Re  "
+        android:checkable="true"
+        app:chipBackgroundColor="@color/chip_color"
+        app:checkedIcon="@drawable/ic_check_circle_black_24dp"/>
+    <com.google.android.material.chip.Chip
+        android:id="@+id/skat_kontra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skat_re"
+        android:layout_marginRight="3dp"
+        android:layout_alignBaseline="@id/skat_re"
+        android:checkable="true"
+        android:text="Kontra"
+        app:chipBackgroundColor="@color/chip_color"
+        app:checkedIcon="@drawable/ic_check_circle_black_24dp"/>
+    <com.google.android.material.chip.Chip
+        android:id="@+id/skat_bock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skat_re"
+        android:layout_alignBaseline="@id/skat_kontra"
+        android:layout_marginRight="3dp"
+        android:text="Bock"
+        android:checkable="true"
+        app:chipBackgroundColor="@color/chip_color"
+        app:checkedIcon="@drawable/ic_check_circle_black_24dp"/>
+    </LinearLayout>
+</RelativeLayout>

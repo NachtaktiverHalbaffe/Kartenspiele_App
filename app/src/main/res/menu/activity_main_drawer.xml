@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryLight"
+    tools:showIn="navigation_view">
+
+    <item android:title="Pokerdeck">
+    <menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_golfen"
+            android:icon="@drawable/ic_golf_course_black_24dp"
+            android:title="Golfen" />
+        <item
+            android:id="@+id/nav_arschloch"
+            android:icon="@drawable/ic_sentiment_very_dissatisfied_black_24dp"
+            android:title="Arschloch/Nigger" />
+        <item
+            android:id="@+id/nav_shithead"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Shithead" />
+        <item
+            android:id="@+id/nav_schlafmuetze"
+            android:icon="@drawable/ic_hotel_black_24dp"
+            android:title="Schlafmütze" />
+
+    </group>
+    </menu>
+    </item>
+
+    <item android:title="Skatdeck">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_schwimmen"
+                    android:icon="@drawable/ic_pool_black_24dp"
+                    android:title="Schwimmen" />
+
+                <item
+                    android:id="@+id/nav_skat"
+                    android:icon="@drawable/ic_king_of_spades_50"
+                    android:title="Skat" />
+
+                <item
+                    android:id="@+id/nav_durak"
+                    android:icon="@drawable/sword_cross"
+                    android:title="Durak" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="App">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_suchen"
+                android:icon="@drawable/ic_explore_black_24dp"
+                android:title="Spiel finden"/>
+            <item
+                android:id="@+id/nav_einstellungen"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Einstellungen"/>
+        </group>
+    </menu>
+</item>
+
+
+</menu>
+
+

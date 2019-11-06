@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="8dp"
+            android:fillViewport="false"
+            android:requiresFadingEdge="vertical"
+            android:id="@+id/spiele_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kartendeck_textView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/kartenspiele_card" />
+
+        <SearchView
+            android:id="@+id/searchbar"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:elevation="8dp"
+            android:background="@drawable/search_input_background"
+            android:fadeScrollbars="false"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spieleranzahl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/Spieleranzahl"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/spieleranzahl_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/spieleranzahl_textView"
+            app:layout_constraintTop_toTopOf="@+id/spieleranzahl_textView" />
+
+        <Spinner
+            android:id="@+id/spielzeit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/Spielzeit"
+            app:layout_constraintBottom_toBottomOf="@+id/spielzeit_textView"
+            app:layout_constraintEnd_toEndOf="@+id/spieleranzahl"
+            app:layout_constraintStart_toStartOf="@+id/spieleranzahl"
+            app:layout_constraintTop_toTopOf="@+id/spielzeit_textView" />
+
+        <Spinner
+            android:id="@+id/komplexitaet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/Komplexitaet"
+            app:layout_constraintBottom_toBottomOf="@+id/komplexitaet_textView"
+            app:layout_constraintEnd_toEndOf="@+id/spielzeit"
+            app:layout_constraintStart_toStartOf="@+id/spielzeit"
+            app:layout_constraintTop_toTopOf="@+id/komplexitaet_textView" />
+
+        <Spinner
+            android:id="@+id/kartendeck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/Kartendeck"
+            app:layout_constraintBottom_toBottomOf="@+id/kartendeck_textView"
+            app:layout_constraintEnd_toEndOf="@+id/komplexitaet"
+            app:layout_constraintStart_toStartOf="@+id/komplexitaet"
+            app:layout_constraintTop_toTopOf="@+id/kartendeck_textView" />
+
+        <TextView
+            android:id="@+id/komplexitaet_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Komplexität"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/spielzeit_textView"
+            app:layout_constraintStart_toStartOf="@+id/spielzeit_textView"
+            app:layout_constraintTop_toBottomOf="@+id/spielzeit_textView" />
+
+        <TextView
+            android:id="@+id/kartendeck_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Kartendeck"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/komplexitaet_textView"
+            app:layout_constraintStart_toStartOf="@+id/komplexitaet_textView"
+            app:layout_constraintTop_toBottomOf="@+id/komplexitaet_textView" />
+
+        <TextView
+            android:id="@+id/spieleranzahl_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Spieleranzahl"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchbar" />
+
+        <TextView
+            android:id="@+id/spielzeit_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Spielzeit"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/spieleranzahl_textView"
+            app:layout_constraintStart_toStartOf="@+id/spieleranzahl_textView"
+            app:layout_constraintTop_toBottomOf="@+id/spieleranzahl_textView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

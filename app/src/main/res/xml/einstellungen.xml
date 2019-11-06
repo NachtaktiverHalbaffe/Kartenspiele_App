@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Erscheinungsbild"
+        android:textColor="@color/textcolorDark">
+        <CheckBoxPreference
+            android:key="@string/key_erscheinungsbild_auto"
+            android:textColor="@color/textcolorDark"
+            android:title="Erscheinungsbild automatisch wählen"
+            android:summary="Verwende das Erscheinungsbild, dass vom System festgelegt wrde (Android Q oder höher)"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="@string/key_erscheinungsbild_hell"
+            android:title="Helles Erscheinungsbild"
+            android:textColor="@color/textcolorDark"
+            android:summary="Verwende das helle Erscheinungsbild, unabhängig davon, was vom System festgelegt ist"
+            android:defaultValue="false"/>
+
+        <CheckBoxPreference
+            android:key="@string/key_erscheinungsbild_dunkel"
+            android:title="Dunkles Erscheinungsbild"
+            android:textColor="@color/textcolorDark"
+            android:summary="Verwende das dunkle Erscheinungsbild, unabhängig davon, was vom System festgelegt ist"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="App"
+        android:textColor="@color/textcolorDark">
+        <CheckBoxPreference
+            android:key="@string/key_delete"
+            android:textColor="@color/textcolorDark"
+            android:title="Nachfrage beim Löschen"
+            android:summary="Nachfragen, wenn ein Spielstand gelöscht werden soll"
+            android:defaultValue="true"/>
+        />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

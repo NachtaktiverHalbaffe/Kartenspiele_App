@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Kartenspiele</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="key_erscheinungsbild_auto">appearance</string>
+    <string name="key_erscheinungsbild_hell">appearance_light</string>
+    <string name="key_erscheinungsbild_dunkel">appearance_dark</string>
+    <string name="key_delete">key_delete</string>
+    <string name="home_text">Wilkommen zur Kartenspiele-App!
+\n\nHier werden Kartenspiele erklärt, die man mit jeden Poker- oder Skatdeck spielen kann. Wenn man auf den Button mit den Buch drückt, dann wird das jeweilge Spiel erklärt. Drückt man auf de Button mit den \"+\", dann kann man eine neue Partie des jeweiligen Spieles erstellen. Dort kann man den Punktestand aufschreiben oder Statistik führen.
+        \n\nDrückt man auf die jeweilige Partie, kann man die Platzierungen oder Punktestände der jeweiligen Runde eingeben. Drückt man lang auf die Partie, dann kann man diese bearbeiten. Mit einen Swipe nach links kann man die entsprechende Partie löschen.
+        \n\nViel Spaß mit der App!
+</string>
+    <string name="Golfen_Spielanleitung">Ziel: Die niedrigste Punktzahl erreichen\n\n
+        Spielprinzip: Jeder hat 6 Karten vor sich liegen. Manche verdeckt manche offen.
+        Reihum hat jeder eine Wahl: Entweder er nimmt die oberste Karte des Ablagestapels oder zieht vom Kartenstapel.
+        Diese kann er dann mit einen seiner Karten austauschen. Die Ausgetauschte Karte kommt oben auf den Ablagestapel\n\nSpielablauf:\n
+        1. Jeder bekommt verdeckt 6 Karten ausgeteilt. Die karten werden in einen 2x3 Raster hingelegt. Anschließend deckt der Spieler zwei Karten auf, die nebeneinander liegen müssen\n
+        2. Der erste deckt die oberste Karte vom Kartenstapel auf und entscheidet, ob er sie mit einer eigenen Karte tauschen will oder nicht. Die getauschte oder aufgedeckte Karte wird offen auf den Ablagestapel abgelegt\n
+        3. Der nächste hat die Wahl, die oberste Karte vom Kartenstapel oder Abagestapel aufzunehmen und analog wie in Schritt 2 mit den eigenen Karten zu tauschen. Ist der Kartenstapel leer, wird der Abagestapel gemischt und verdeckt als neuer Kartenstapel hingelegt.\n
+        4. Schritt 3 wird solange wiederholt, bis ein Spieler alle eigenen Karten aufgedeckt und die restlichen Spieler die letzte Runde absolviert haben\n\n
+    </string>
+    <string name="Golfen_Punktewertung">
+        Wertung:\nDie Zahlenwerte der Karten entsprechen ihren Punkten mit Ausnahme der roten Neunen, die -2 Punkte geben. Der Bube gibt 11, die Dame 12, der König 0 und das Ass -1 Punkte. Zwei identische Karten nebeneinander heben sich gegenseitig zu null auf (auch bei Minuswerten). Hat man alle 4 Karten eines Zahlenwertes, geben diese nach der Runde zusätzlich -5 Punkte. Die Ergebnisse der Runden werden zusammengetragen und der Spieler mit den wenigsten Punkten gewinnt.
+    </string>
+    <string name="Skat_Anleitung">
+        1.Der Geber mischt die Karten und der Spieler rechts vom Geber, hebt ab. Mindesten 3 Karten müssen liegen bleiben, oder abgehoben werden. Der Geber fügt die beiden Stapel wieder zusammen und verteilt im Uhrzeigersinn die Karten — beginnend bei dem Spieler zu seiner linken: jeweils 3, Skat (2), 4, 3 Karten.\n\n
+2.Jetzt wird durch das das Reizen die Spielart festgelegt; z.B. Herz oder Grand. Es ist eine Art Punkte basierte Auktion, bei der der Höchstbietende das Spiel „bekommt“, also zwar als Alleinspieler gegen zwei Gegner spielt (Nachteil) aber dafür das Spiel festlegen (Vorteil) darf.
+Derjenige, der das Reizen gewinnt, nimmt den Skat (2 Karten) auf, und legt dann 2 beliebige Karten wieder verdeckt auf den Tisch (auch "drücken" genannt). Erst dann sagt er an, welches Spiel er spielt.\n\n
+3. Der Spieler zur Linken des Gebers (Vorhand) beginnt das Spiel. Nach diesem Start, spielt jeweils der Spieler an ("ist vorne"), der den vorherigen Stich gewonnen hat
+  \n\nReizen:\nDas Reizen folgt einer einfachen Formel. Es gibt einen Reizfaktor. Dieser ergibt sich aus der Anzahl der Spitzen(=Buben) bzw. der fehlenden Spitzen, die man hat. Hat man den Kreuz Buben, zählt man die Anzahl der Buben, die man in richtiger Reihenfolge(!) hat. Fehlt eine Karte in der Reihenfolge, dann hört man bei der Lücke auf zu zählen. Besitzt man den Kreuz Buben nicht, zählt man die fehlenden Anzahl der Spitzen bis zum ersten Buben. Auf die Anzahl der Spitzen bzw. fehlenden Spitzen addiert man eins drauf, dies ist dann der Reizfaktor. Den Reizfaktor multipliziert man dann den Grundwert der Farbe, die man spielen will. Dies ist der maximale Reizwert, überschreitet man den und gewinnt man die Runde, ohne auf den Reizwert zu kommen, dann verliert man das Spiel.
+    </string>
+    <string name="Skat_Regeln">1.Es gibt 3 Spielarten (Ramsch außen vor):\n
+Die Farbspiele, bei denen die 4 Bauern und alle 7 Karten einer Farbe (z.B. Karo) Trumpf sind.\n
+Der Grand, bei dem nur die 4 Bauern Trumpf sind.\n
+Das Nullspiel, bei dem es keine Trümpfe gibt und der Alleinspieler keinen Stich machen darf (auch keinen mit 0 Punkten). Die Reihenfolge ist 7–8–9–10–Bube–Dame–König–Ass (man sagt, \„die 10 und der Bube sind eingereiht\“).\n\n
+2. Ob nun Fehlfarbe oder Trumpf angespielt (= erste Karte eines Stichs) wurde, es muss grundsätzlich bedient werden. Als Fehlfarben gelten die Karten, die kein Trumpf sind.\n\n
+3. Nur wenn dies auf Grund des Blatts nicht möglich ist, kann abgeworfen (eine andere Fehlfarbe) oder gestochen werden (ein Trumpf).\n\n
+4. Kontra / Re - Nachdem der Alleinspieler sein Spiel angesagt hat, kann ein Spieler der Gegenpartei \"Kontra\" ansagen. Der Alleinspieler kann \"Re\" erwidern. Beides verdoppelt jeweils die Punkte der Gewinnerpartei.
+Ein Gegenspieler darf nur dann Kontra sagen, wenn er selbst mitgereizt hat oder als Hinterhand mehr als 18 hätte sagen müssen. Er kann so lange Kontra geben, wie er noch alle 10 Karten auf der Hand hat.\n\n
+5. 4 Spieler: Wird mit 4 Spielern gespielt, so ist der 4. Spieler der Geber. Dieser setzt aus. Er darf weder den Skat einsehen, noch in die Karten seines linken und rechten Nachbarn schauen.\n\n
+6. Reihenfolge - Im Uhrzeigersinn: Geber (= Hinterhand) - links vom Geber: Vorhand - links davon Mittelhand.
+       </string>
+    <string name="Skat_Wertung">Karten Reihenfolge:\n1.Kreuz-Bube\n2. Pik-Bube\n3.Herz-Bube\n4. Karo-Bube\n\5.As\n6. Zehn\n7. König\n8. Dame\n9. Neun\n10. Acht\n11. Sieben\n\nGrand Spiel - Nur Buben sind Trumpf, alles andere Fehlfarben
+\nNull Spiel - Keine Trümpfe; 10 und Bube sind eingereiht\n\n
+Kartenwerte:\nAs->11\nBube->2\nZehn->10\nKönig->4\nDame->3\nNeun->0\nAcht->0\nSieben->0\n\nGrundwerte (zum Reizen):\nGrand->24\nKreuz->12\nPik->11\nHerz->10\nKaro->9\n\nSonderspiele:\nNull->23\nNull Ouvert->46\n
+    </string>
+    <string name="Schwimmen_Punktewertung">Wertung:\nDer Spieler mit den wenigsten Punkten verliert die Runde. Ausnahme: Ein Spieler hat drei Asse, dann verlieren alle anderen Spieler ein Leben. Der erste Spieler, der alle Leben verloren hat, bekommt ein Extraleben. Er \" schwimmt \". Ansonsten ist der Spieler aus der Runde ausgeschieden.
+                                            \n\nZusammengezählt werden alle Werte derselben Augenfarbe(z.B. Pik). Dabei besitzt jede Karte den Augenwert, Bildkarten 10 Punkte und das Ass 11 Punkte. 3 gleiche Karten ergeben unabhängig von der Augenfarbe 30,5 Punkte (z.B. 3 8er).</string>
+    <string name="Schwimmen_Spielanleitung">Spielablauf:
+        \n\n1.Jeder Spieler bekommt 3 Karten verdeckt in die Hand ausgeteilt und 3 Karten werden verdeckt in die Mitte gelegt.
+        \n2. Der erste Spieler (=Geber) schaut sich seine Karten an. Er hat die Möglichkeit, seine Hand mit den verdeckten Karten auszutauschen oder zu behalten. Danach deckt er die Karten in der Mitte auf.
+        \n3. Der nächste Spieler darf eine Karte in der Mitte mit einer seiner Karten austauschen oder die komplette Hand (erst nach der ersten Runde möglich). Will der Spieler nichts tauschen, dann kann er schieben. Wird eine Runde geschoben, werden die Karten in der Mitte aus den Spiel genommen und neue 3 Karten aus den Kartenstapel aufgedeckt.
+        \n4. Wiederhole Schritt 3 solange, bis einer klopft (erst nach einer Runde möglich). Dann wird die Runde fertig gespielt und anschließend ausgewertet. Besitzt einer 31 Punkte oder 3 Asse, dann muss der Spieler direkt ohne klopfen beenden.</string>
+    <string name="Arschloch_Anleitung">Alle Karten werden zu Beginn gut gemischt und dann an die Mitspieler ausgeteilt. Alle Spieler bekommen gleich viele Karten, wenn es nicht aufgeht werden die übrigen Karten verdeckt abgelegt. Wer die Karo Zwei/Sieben in der Hand hält beginnt das Spiel. Man hat die Möglichkeit Mehrlinge oder aber auch einzelne Karten auszuspielen. Diese können zum Beispiel zwei Siebener oder drei Achter.
+        \n\nNun sind reihum die anderen Spieler am Zug und können passen oder aber den Stich mit einer höheren Karte übernehmen. Der Stich kann bei Mehrlingen nur mit gleich vielen Karten eines höheren Rangs gemacht werden. Sind z. B. drei Neunen auf dem Tisch dann kann der Stich nur mit drei Zehnen, Buben, Damen, Königen oder Assen erfolgen.
+        \n\nDer Verlierer ist der Geber der neuen Runde und fängt diese an. In der neuen Runde tauschen der König (Erstplatzierte) mit den Arschloch (Letzer) 2 Karten und der Vize-König (Zweitplatzierte) mit den Vize-Arschloch (Vorletzter) eine Karte. Dabei Dürfen die Ranghöheren ihre Karten erfragen, die niedrig Platzierteren hingegen müssen mit den Karten Leben, den der höher Platzierte ihnen gibt. Die restlichen Spieler sind entsprechend ihrer Platzierungen die 1. bis n-ten Bauern. Sie dürfen entsprechend der Rangfolge die Karten, die beim Austeilen übrig geblieben sind, anschauen, eine tauschen und den nächsten Bauern weitergeben.
+    </string>
+    <string name="Arschloch_Wertung">Die Platzierung wird über die Reihenfolge ermittelt, in der die Spieler alle ihre Karten losgeworden sind. Der erste, der alle Karten abgelegt hat, wird Erster, der Zweite Zweiter usw.\n\nDie Spielführung in der App dient lediglich der Statistik und ist nicht für das Spiel notwendig.</string>
+    <string name="Durak_Anleitung">Durak wird mit 36 Karten gespielt. Dies sind die 32 Karten des Skatdecks plus vier Sechser. Dabei erhält jeder Spieler sechs Karten. Da Durak von zwei bis sechs Spielern gespielt werden kann, kann es sein, dass sogar alle Karten ausgeteilt werden. Eine Karte wird umgedreht und unter den Kartenstapel gelegt, dies ist dann die Trumpffarbe. Da bei sechs Karten keine Karte übrig bleibt, ist die letzte ausgeteilte Farbe Trumpf. Sollte ein Spieler fünf Karten der gleichen Farbe haben, dann kann er verlangen das neu gemischt wird.
+    \n\nDas Spiel selbst beginnt indem der Spieler mit dem niedrigsten Trumpf den Spieler links von sich angreift. Ab dem zweiten Spiel wird dann immer der Durak bzw. der Dummkopf der vorherigen Runde angegriffen. Der Angriff beginnt indem der Angreifer eine oder mehrere Karten der gleichen Wertigkeit ausspielt. Der Verteidiger muss dann versuchen diese mit der richtigen Farbe (z.B. Herz) oder Trumpffarbe zu stechen. Die Personen links und rechts vom angegriffenen Spieler dürfen jederzeit eine Karte zu den Angriff  hinzulegen, solange eine Karte dieser Wertigkeit bereits auf den Spielfeld liegt. Beipsiel: Der Verteidiger wurde mit einer 6 angegriffen und hat mit einer 8 abgewehrt. Die anderen beiden Spieler dürfen also mit einer 6 oder einer 8 angreifen. Ein Verteidiger kann maximal mit sechs Karten (wenn noch keiner einen Angriff abwehren konnte 4 Karten) angegriffen werden, jedoch nicht mit mehr als er Karten auf der Hand hat. Wenn ihm dies gelingt werden die Karten aus dem Spiel genommen, und der Verteidiger darf den Spieler zu seiner Linken angreifen. Wenn er die Karten nicht stechen kann, muss er die Karten aufnehmen und der Spieler zu seiner linken darf den nächsten Angriff starten.
+        \n\nSobald ein Spieler Karten aus seiner Hand zum Angreifen oder Verteidigen abgelegt hat muss er von Kartenstapel, falls es da noch welche gibt weitere Karten holen bis er wieder sechs Karten hat. Die umgedrehte Trumpfkarte darf dabei auch als letzte Karte gezogen werden. Sobald der Kartenstapel dann leer ist geht es darum so schnell wie möglich die verbliebenen Karten auf der Hand abzulegen und sich freizuspielen. Da nun in dieser Phase nicht mehr jeder Spieler sechs Karten hat darf ein Angriff auch nur noch so viele Karten beinhalten wie der Verteidiger auf der Hand hält.
+        \n\nEine Besonderheit ist dass man einem Angriff ausweichen kann indem man die gleichen Karten anlegt, die bereits liegen. Legt ein Spieler zum Beispiel zwei Achter, dann kann der verteidigende Spieler dem Angriff ausweichen indem er selbst eine Acht legt. Der Angriff geht dann weiter und der Spieler links des eigentlichen Verteidigers wird nun angegriffen und muss sich verteidigen. Dies geht jedoch nur solange, bnis die erste Karte abgewehrt wurde.
+    </string>
+    <string-array name="Spieleranzahl">
+        <item >Einer</item>
+        <item >Zwei</item>
+        <item >Drei</item>
+        <item >Vier</item>
+        <item >Fünf</item>
+        <item >Sechs</item>
+        <item >Sieben</item>
+        <item >Acht</item>
+    </string-array>
+    <string-array name="Spielzeit">
+        <item>Für Zwischendurch</item>
+        <item>Halbe Stunde</item>
+        <item>Eine Stunde</item>
+        <item>Einen Abend</item>
+    </string-array>
+    <string-array name="Komplexitaet">
+        <item>Einfach</item>
+        <item>Mittel</item>
+        <item>Anspruchsvoll</item>
+    </string-array>
+    <string-array name="Kartendeck">
+        <item>Alle</item>
+        <item>Skatdeck</item>
+        <item>Pokerdeck</item>
+    </string-array>
+    <string name="Shithead_Anleitung">Der erste Geber wird nach dem Zufallsprinzip bestimmt. Das Geben erfolgt nach jedem Spiel im Uhrzeigersinn.
+        \n\n1.Der Geber teilt an jeden Spieler eine Reihe von drei verdeckten Karten aus, jeweils reihum die erste, dann die zweite, dann die dritte.
+\n2.Der Geber teilt an jeden Spieler drei aufgedeckte Karten aus, jeweils reihum eine nach der anderen, sodass sie die verdeckten Karten bedecken.
+\n3.Der Geber teilt an jeden Spieler drei weitere Karten aus, die die Spieler auf die Hand nehmen und ansehen, jeweils reihum eine nach der anderen.
+\n\nDie übrigen Karten werden verdeckt abgelegt und bilden einen Nachziehstapel. Vor dem Beginn des Spiels kann jeder Spieler beliebig viele Karten aus seinem Blatt gegen seine aufgedeckten Karten austauschen. Ein Spieler darf niemals die verdeckten Karten ansehen, bevor sie gespielt werden. (Die Spieler nehmen gewöhnlich aufgedeckte Karten mit niedrigeren Werten in ihr Blatt auf).
+\n\nSpielablauf:\nGespielt wird der Reihe nach im Uhrzeigersinn. Es gilt die auf dem Ablagestapel oben liegende Karte gleichwertig oder besser zu schlagen. Liegt keine Karte auf dem Ablagestapel kann beliebig ausgespielt werden (mit Ausnahme der Spieleröffnung, hier wurde ja angesagt was gespielt wird).
+        \n\nDer Spieler, der an der Reihe ist, zieht so viele Karten nach, dass er nach Ablegen seiner Karten exakt drei Karten auf der Hand hat. Hat der Spieler (wesentlich) mehr karten auf der Hand, darf er keine Karten nachziehen. Wird vergessen Karten vor dem Ablegen zu ziehen, muss der Spieler bis zur nächsten Strafe mit entsprechend weniger Karten auf der Hand weiterspielen. Wenn er das nächste Mal an der Reihe ist nicht auf drei Karten auffüllen, sondern nur auf zwei (ggf. eine).
+    \n\nDies geht natürlich nur, wenn noch Karten auf dem Ziehstapel vorhanden sind. Ist der Ziehstapel leer, dann wird das Spiel ohne diesen ersten Schritt weitergespielt. Ein geleerter Stapel läutet quasi die zweite Phase des Spiels ein.Der Spieler spielt dann die Karten aus seiner Hand. Dabei gelten folgende einfache Regeln: er muss der Wertigkeit entspechend mindestens gleichwertig bedienen. Dabei kann er (muss aber nicht) auch mehr als eine gleichwertige Karte auf ein Mal spielen. Legt ein Spieler mehrere Karten ab bedeutet dies nicht, dass die folgenden Abwürfe ebenfalls mit der entsprechenden Anzahl von Karten passieren müssen - jeweils eine Karte reicht.
+Kann der Spieler den Stapel nicht bedienen (gleichwertig oder höher spielen und hat auch keine Zwei auf der Hand) muss er als Strafe den Ablagestapel auf die Hand nehmen. Der nächste Spieler ist an der Reihe und kann legen was er will.
+\n\nSind Ablagestapel und Hand leer, darf der Spieler auf die fünf offen liegenden Karten zurückgreifen und diese spielen. Auch hier gilt wieder, dass mehrere gleichwertige Karten zusammen gespielt werden dürfen. Kann er nicht bedienen bleiben die Karten auf dem Tisch liegen, stattdessen nimmt er als Strafe den Ablagestapel auf die Hand.
+\n\nErst wenn alle fünf offen liegenden Karten im Spiel sind, werden die verdeckten Karten gespielt (Dies geht natürlich auch nur, wenn die Hand leer ist.). Hierbei wird jeweils (nur) eine Karte -ohne sie vorher anzusehen- auf den Ablagestapel geworfen. Jeder Mittspieler bekommt so die neue Karte zu sehen. Ist dieser Spielzug gültig wird normal weitergespielt. Ansonsten nimmt der Spieler den Ablagestapel (mit der neuen Karte zusammen) auf die Hand. Der nächste Spieler ist an der Reihe.
+Bekommt der Spieler wieder Karten auf seine Hand, darf er nicht mehr vom Tisch spielen bis die Hand wieder leer ist.
+Leert ein Spieler den Ablagestapel auf den Müll, kommt er erneut raus.
+        \n\nSonderkarten:
+        \nZahl 2: darf auf alles gelegt werden, ist also höher als Ass/Joker und gleichzeitig die niedrigste Karte im Spiel.
+\nZahl 10: werden eine (oder mehrere) Zehnen gespielt landet der Ablagestapel auf dem Müll. Ist also gleichbedeutend mit fünf übereinander liegenden gleichwerigen Karten. Darf natürlich nicht auf höhere Karten gelegt werden.
+\nAss: bei den meisten Spielen die höchste Karte. Ansonsten keine Besonderheit.
+\nJoker: keine Sonderkarte. Wenn vorhanden, dann lediglich höher als das Ass.
+\n5 (oder mehr) gleichwertige Karten direkt übereinander im Ablagestapel: der Stapel landet auf dem Müll. Geht auch, wenn ein Spieler zwei gleiche Karten spielt und der folgende Spieler drei oder mehr Karten. Dies geht nicht, wenn die Karten nicht unmittelbar hintereinader liegen.
+\nBeim Leeren des Ablagestapels ist der Spieler, der die Zehn (bzw. die 5 gleichwertigen Karten) gespielt hat, erneut dran.
+    </string>
+    <string name="Schlafmuetze_Anleitung">
+        Jeder Spieler bekommt vier Karten in die Hand ausgeteilt. Der Spieler, der Anfängt, bekommt fünf Karten. Ziel ist es, in der Hand vier gleiche Augen zu haben, z.B. vier Asse. Der Spieler mit den 5 Karten darf eine Karte ablegen bzw austauschen und gibt die ausgetauschte den nächsten Spieler weiter. Dieser kann wiederum eine austauschen. Wird eine Karte eine komplette Runde durchgereicht, wird diese aus den Spiel genommen und eine neue vom Kartenstapel gezogen.
+        \n\nWenn ein Spieler vier gleiche Karten hat, kann er jederzeit sein Blatt auf den Tisch legen. Sobald dies passiert ist, müssen alle so schnell wie möglich auch ihre Blätter ablegen. Der Letzte verliert die Runde und ist somit Schlafmütze.
+    </string>
+    <string name="Schlafmuetze_Wertung">
+        Es gibt zwei Arten der Wertung:
+        \n1. Die Schlafmütze scheidet aus und es wird solange gespielt, bis nur noch einer übrig ist.
+        \n2. Es wird gezäht, wie oft jeder verloren hat. Derjenige mit den wenigsten Niederlagen gewinnt. Die Spieleführung der App ist für diese Spielweise ausgelegt.
+    </string>
+
+</resources>

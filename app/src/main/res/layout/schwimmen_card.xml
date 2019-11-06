@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_margin="6dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/schwimmen_cardview"
+        android:backgroundTint="@color/colorPrimaryLight"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="717dp"
+        android:layout_height="wrap_content"
+        card_view:layout_editor_absoluteX="1dp">
+
+
+        <TextView
+            android:id="@+id/schwimmen_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Spielbezeichnung"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/schwimmen_spieler1"
+            app:layout_constraintStart_toStartOf="@+id/schwimmen_spieler1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            card_view:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/schwimmen_spieler1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="4dp"
+            android:text="Spieler 1"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/leben1"
+            app:layout_constraintEnd_toStartOf="@+id/schwimmen_spieler2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/schwimmen_titel" />
+
+        <TextView
+            android:id="@+id/schwimmen_spieler2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Spieler 2"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/schwimmen_spieler1"
+            app:layout_constraintEnd_toStartOf="@+id/schwimmen_spieler3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/schwimmen_spieler1"
+            app:layout_constraintTop_toTopOf="@+id/schwimmen_spieler1" />
+
+        <TextView
+            android:id="@+id/schwimmen_spieler3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Spieler 3"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/schwimmen_spieler2"
+            app:layout_constraintEnd_toStartOf="@+id/schwimmen_spieler4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/schwimmen_spieler2"
+            app:layout_constraintTop_toTopOf="@+id/schwimmen_spieler2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/schwimmen_spieler4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Spieler 4"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/schwimmen_spieler3"
+            app:layout_constraintEnd_toStartOf="@+id/schwimmen_spieler5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/schwimmen_spieler3"
+            app:layout_constraintTop_toTopOf="@+id/schwimmen_spieler3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/schwimmen_spieler5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Spieler 5"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/schwimmen_spieler4"
+            app:layout_constraintEnd_toStartOf="@+id/schwimmen_spieler6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/schwimmen_spieler4" />
+
+        <TextView
+            android:id="@+id/leben5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/leben4"
+            app:layout_constraintEnd_toEndOf="@+id/schwimmen_spieler5"
+            app:layout_constraintStart_toStartOf="@+id/schwimmen_spieler5"
+            app:layout_constraintTop_toBottomOf="@+id/schwimmen_spieler5"
+            app:layout_constraintTop_toTopOf="@+id/leben4" />
+
+        <TextView
+            android:id="@+id/platzierung5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/platzierung4"
+            app:layout_constraintEnd_toEndOf="@+id/leben5"
+            app:layout_constraintStart_toStartOf="@+id/leben5"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/schwimmen_spieler8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:text="Spieler 8"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/schwimmen_spieler7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/schwimmen_spieler7" />
+
+
+        <TextView
+            android:id="@+id/platzierung8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/leben8"
+            app:layout_constraintStart_toStartOf="@+id/leben8"
+            app:layout_constraintTop_toTopOf="@+id/platzierung7" />
+
+        <TextView
+            android:id="@+id/leben8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/leben7"
+            app:layout_constraintEnd_toEndOf="@+id/schwimmen_spieler8"
+            app:layout_constraintStart_toStartOf="@+id/schwimmen_spieler8"
+            app:layout_constraintTop_toTopOf="@+id/leben7" />
+
+        <TextView
+            android:id="@+id/leben6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/leben5"
+            app:layout_constraintEnd_toEndOf="@+id/schwimmen_spieler6"
+            app:layout_constraintStart_toStartOf="@+id/schwimmen_spieler6"
+            app:layout_constraintTop_toTopOf="@+id/leben5" />
+
+        <TextView
+            android:id="@+id/platzierung6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/platzierung5"
+            app:layout_constraintEnd_toEndOf="@+id/leben6"
+            app:layout_constraintStart_toStartOf="@+id/leben6"
+            app:layout_constraintTop_toTopOf="@+id/platzierung5" />
+
+        <TextView
+            android:id="@+id/schwimmen_spieler6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Spieler 6"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/schwimmen_spieler5"
+            app:layout_constraintEnd_toStartOf="@+id/schwimmen_spieler7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/schwimmen_spieler5" />
+
+        <TextView
+            android:id="@+id/schwimmen_spieler7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Spieler 7"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/schwimmen_spieler6"
+            app:layout_constraintEnd_toStartOf="@+id/schwimmen_spieler8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/schwimmen_spieler6" />
+
+        <TextView
+            android:id="@+id/platzierung7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/leben7"
+            app:layout_constraintStart_toStartOf="@+id/leben7"
+            app:layout_constraintTop_toTopOf="@+id/platzierung6" />
+
+        <TextView
+            android:id="@+id/leben7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/leben6"
+            app:layout_constraintEnd_toEndOf="@+id/schwimmen_spieler7"
+            app:layout_constraintStart_toStartOf="@+id/schwimmen_spieler7"
+            app:layout_constraintTop_toTopOf="@+id/leben6" />
+
+
+        <TextView
+            android:id="@+id/leben1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/platzierung1"
+            app:layout_constraintEnd_toEndOf="@+id/schwimmen_spieler1"
+            app:layout_constraintStart_toStartOf="@+id/schwimmen_spieler1"
+            app:layout_constraintTop_toBottomOf="@+id/schwimmen_spieler1" />
+
+        <TextView
+            android:id="@+id/leben2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/platzierung2"
+            app:layout_constraintEnd_toEndOf="@+id/schwimmen_spieler2"
+            app:layout_constraintStart_toStartOf="@+id/schwimmen_spieler2"
+            app:layout_constraintTop_toTopOf="@+id/leben1" />
+
+        <TextView
+            android:id="@+id/leben3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/leben2"
+            app:layout_constraintEnd_toEndOf="@+id/schwimmen_spieler3"
+            app:layout_constraintStart_toStartOf="@+id/schwimmen_spieler3"
+            app:layout_constraintTop_toTopOf="@+id/leben2" />
+
+        <TextView
+            android:id="@+id/leben4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/leben3"
+            app:layout_constraintEnd_toEndOf="@+id/schwimmen_spieler4"
+            app:layout_constraintStart_toStartOf="@+id/schwimmen_spieler4"
+            app:layout_constraintTop_toTopOf="@+id/leben3" />
+
+        <TextView
+            android:id="@+id/platzierung1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/leben1"
+            app:layout_constraintStart_toStartOf="@+id/leben1"
+            app:layout_constraintTop_toBottomOf="@+id/leben1" />
+
+        <TextView
+            android:id="@+id/platzierung2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/platzierung1"
+            app:layout_constraintEnd_toEndOf="@+id/leben2"
+            app:layout_constraintStart_toStartOf="@+id/leben2"
+            app:layout_constraintTop_toTopOf="@+id/platzierung1" />
+
+        <TextView
+            android:id="@+id/platzierung3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/platzierung2"
+            app:layout_constraintEnd_toEndOf="@+id/leben3"
+            app:layout_constraintStart_toStartOf="@+id/leben3"
+            app:layout_constraintTop_toTopOf="@+id/platzierung2" />
+
+        <TextView
+            android:id="@+id/platzierung4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/platzierung3"
+            app:layout_constraintEnd_toEndOf="@+id/leben4"
+            app:layout_constraintStart_toStartOf="@+id/leben4"
+            app:layout_constraintTop_toTopOf="@+id/platzierung3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>

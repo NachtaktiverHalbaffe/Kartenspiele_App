@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableRow
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/score">
+
+        <TextView
+            android:layout_column="1"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/score1"/>
+
+        <TextView
+            android:layout_column="2"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/score2"/>
+
+        <TextView
+            android:layout_column="3"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/score3"/>
+
+        <TextView
+            android:layout_column="4"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/score4"/>
+
+        <TextView
+            android:layout_column="5"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/score5"/>
+
+        <TextView
+            android:layout_column="6"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/score6"/>
+
+        <TextView
+            android:layout_column="7"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/score7"/>
+
+        <TextView
+            android:layout_column="8"
+            android:text="00"
+            android:textColor="@color/textcolorDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/score8"/>
+    </TableRow>

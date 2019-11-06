@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/arschloch_cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+    android:backgroundTint="@color/colorPrimaryLight">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="844dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp">
+
+
+        <TableLayout
+            android:id="@+id/golfen_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/arschloch_titel">
+
+            <TableRow
+                android:id="@+id/spieler"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/arschloch_spieler1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginEnd="4dp"
+                    android:text="Spieler 1"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/arschloch_spieler2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="@id/arschloch_titel"
+                    app:layout_constraintTop_toBottomOf="@+id/arschloch_titel" />
+
+                <TextView
+                    android:id="@+id/arschloch_spieler2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_marginEnd="4dp"
+                    android:text="Spieler 2"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/arschloch_spieler1"
+                    app:layout_constraintEnd_toStartOf="@+id/arschloch_spieler3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/arschloch_spieler1" />
+
+                <TextView
+                    android:id="@+id/arschloch_spieler3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:layout_marginEnd="4dp"
+                    android:text="Spieler 3"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/arschloch_spieler2"
+                    app:layout_constraintEnd_toStartOf="@+id/arschloch_spieler4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/arschloch_spieler2" />
+
+                <TextView
+                    android:id="@+id/arschloch_spieler4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:layout_marginEnd="4dp"
+                    android:text="Spieler 4"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/arschloch_spieler3"
+                    app:layout_constraintEnd_toStartOf="@+id/arschloch_spieler5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/arschloch_spieler3" />
+
+                <TextView
+                    android:id="@+id/arschloch_spieler5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:layout_marginEnd="4dp"
+                    android:text="Spieler 5"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/arschloch_spieler4"
+                    app:layout_constraintEnd_toStartOf="@+id/arschloch_spieler6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/arschloch_spieler4" />
+
+                <TextView
+                    android:id="@+id/arschloch_spieler6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="7"
+                    android:layout_marginEnd="4dp"
+                    android:text="Spieler 6"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/arschloch_spieler5"
+                    app:layout_constraintEnd_toStartOf="@+id/arschloch_spieler7"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/arschloch_spieler5" />
+
+                <TextView
+                    android:id="@+id/arschloch_spieler7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="8"
+                    android:layout_marginEnd="5dp"
+                    android:text="Spieler 7"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/arschloch_spieler6"
+                    app:layout_constraintEnd_toStartOf="@+id/arschloch_spieler8"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/arschloch_spieler6" />
+
+                <TextView
+                    android:id="@+id/arschloch_spieler8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="9"
+                    android:layout_marginEnd="8dp"
+                    android:text="Spieler 8"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/arschloch_spieler7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/arschloch_spieler7" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/king"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/king_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="King"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/vizeking_text"
+                    app:layout_constraintEnd_toStartOf="@+id/arschloch_spieler1"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/arschloch_titel"
+                    app:layout_constraintTop_toBottomOf="@+id/arschloch_spieler1"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/king1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/king_text"
+                    app:layout_constraintEnd_toEndOf="@+id/arschloch_spieler1"
+                    app:layout_constraintStart_toStartOf="@+id/arschloch_spieler1"
+                    app:layout_constraintTop_toTopOf="@+id/king_text" />
+
+                <TextView
+                    android:id="@+id/king2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/king1"
+                    app:layout_constraintEnd_toEndOf="@+id/arschloch_spieler2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/arschloch_spieler2"
+                    app:layout_constraintTop_toTopOf="@+id/king1" />
+
+                <TextView
+                    android:id="@+id/king3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/king2"
+                    app:layout_constraintEnd_toEndOf="@+id/arschloch_spieler3"
+                    app:layout_constraintStart_toStartOf="@+id/arschloch_spieler3"
+                    app:layout_constraintTop_toTopOf="@+id/king2" />
+
+                <TextView
+                    android:id="@+id/king4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/king3"
+                    app:layout_constraintEnd_toEndOf="@+id/arschloch_spieler4"
+                    app:layout_constraintStart_toStartOf="@+id/arschloch_spieler4"
+                    app:layout_constraintTop_toTopOf="@+id/king3" />
+
+                <TextView
+                    android:id="@+id/king5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/king4"
+                    app:layout_constraintEnd_toEndOf="@+id/arschloch_spieler5"
+                    app:layout_constraintStart_toStartOf="@+id/arschloch_spieler5"
+                    app:layout_constraintTop_toTopOf="@+id/king4"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/king6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="7"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/king5"
+                    app:layout_constraintEnd_toEndOf="@+id/arschloch_spieler6"
+                    app:layout_constraintStart_toStartOf="@+id/arschloch_spieler6"
+                    app:layout_constraintTop_toTopOf="@+id/king5" />
+
+                <TextView
+                    android:id="@+id/king7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="8"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@+id/arschloch_spieler7"
+                    app:layout_constraintStart_toStartOf="@+id/arschloch_spieler7"
+                    app:layout_constraintTop_toTopOf="@+id/king6" />
+
+                <TextView
+                    android:id="@+id/king8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="9"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/king7"
+                    app:layout_constraintEnd_toEndOf="@+id/arschloch_spieler8"
+                    app:layout_constraintStart_toStartOf="@+id/arschloch_spieler8"
+                    app:layout_constraintTop_toTopOf="@+id/king7" />
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/vize_king"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/vizeking_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Vize-King"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/bauer1_text"
+                    app:layout_constraintEnd_toEndOf="@+id/king_text"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="@+id/king_text"
+                    app:layout_constraintTop_toBottomOf="@+id/king_text" />
+
+                <TextView
+                    android:id="@+id/vking1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/vizeking_text"
+                    app:layout_constraintEnd_toEndOf="@+id/king1"
+                    app:layout_constraintHorizontal_bias="0.52"
+                    app:layout_constraintStart_toStartOf="@+id/king1"
+                    app:layout_constraintTop_toTopOf="@+id/vizeking_text"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/vking2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_marginBottom="1dp"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/vking1"
+                    app:layout_constraintEnd_toEndOf="@+id/king2"
+                    app:layout_constraintStart_toStartOf="@+id/king2"
+                    app:layout_constraintTop_toTopOf="@+id/vking1" />
+
+                <TextView
+                    android:id="@+id/vking3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/vking2"
+                    app:layout_constraintEnd_toEndOf="@+id/king3"
+                    app:layout_constraintStart_toStartOf="@+id/king3"
+                    app:layout_constraintTop_toTopOf="@+id/vking2" />
+
+                <TextView
+                    android:id="@+id/vking4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/vking3"
+                    app:layout_constraintEnd_toEndOf="@+id/king4"
+                    app:layout_constraintStart_toStartOf="@+id/king4"
+                    app:layout_constraintTop_toTopOf="@+id/vking3" />
+
+                <TextView
+                    android:id="@+id/vking5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/vking4"
+                    app:layout_constraintEnd_toEndOf="@+id/king5"
+                    app:layout_constraintStart_toStartOf="@+id/king5"
+                    app:layout_constraintTop_toTopOf="@+id/vking4" />
+
+                <TextView
+                    android:id="@+id/vking6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="7"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/vking5"
+                    app:layout_constraintEnd_toEndOf="@+id/king6"
+                    app:layout_constraintStart_toStartOf="@+id/king6"
+                    app:layout_constraintTop_toBottomOf="@+id/king5" />
+
+                <TextView
+                    android:id="@+id/vking7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="8"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/vking6"
+                    app:layout_constraintEnd_toEndOf="@+id/king7"
+                    app:layout_constraintStart_toStartOf="@+id/king7"
+                    app:layout_constraintTop_toTopOf="@+id/vking6" />
+
+                <TextView
+                    android:id="@+id/vking8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="9"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/vking7"
+                    app:layout_constraintEnd_toEndOf="@+id/king8"
+                    app:layout_constraintStart_toStartOf="@+id/king8"
+                    app:layout_constraintTop_toTopOf="@+id/vking7" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/bauer1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/bauer1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="1. Bauer"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/bauer2_text"
+                    app:layout_constraintEnd_toEndOf="@+id/vizeking_text"
+                    app:layout_constraintStart_toStartOf="@+id/vizeking_text"
+                    app:layout_constraintTop_toBottomOf="@+id/vizeking_text" />
+
+                <TextView
+                    android:id="@+id/bauer11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginStart="1dp"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer1_text"
+                    app:layout_constraintEnd_toEndOf="@+id/vking1"
+                    app:layout_constraintStart_toStartOf="@+id/vking1"
+                    app:layout_constraintTop_toTopOf="@+id/bauer1_text" />
+
+                <TextView
+                    android:id="@+id/bauer12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer11"
+                    app:layout_constraintEnd_toEndOf="@+id/vking2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/vking2"
+                    app:layout_constraintTop_toTopOf="@+id/bauer11"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/bauer13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer12"
+                    app:layout_constraintEnd_toEndOf="@+id/vking3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/vking3"
+                    app:layout_constraintTop_toTopOf="@+id/bauer12"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/bauer14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer13"
+                    app:layout_constraintEnd_toEndOf="@+id/vking4"
+                    app:layout_constraintStart_toStartOf="@+id/vking4"
+                    app:layout_constraintTop_toTopOf="@+id/bauer13" />
+
+                <TextView
+                    android:id="@+id/bauer15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer14"
+                    app:layout_constraintEnd_toEndOf="@+id/vking5"
+                    app:layout_constraintStart_toStartOf="@+id/vking5"
+                    app:layout_constraintTop_toTopOf="@+id/bauer14" />
+
+                <TextView
+                    android:id="@+id/bauer16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="7"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer15"
+                    app:layout_constraintEnd_toEndOf="@+id/vking6"
+                    app:layout_constraintStart_toStartOf="@+id/vking6"
+                    app:layout_constraintTop_toTopOf="@+id/bauer15" />
+
+                <TextView
+                    android:id="@+id/bauer17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="8"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer16"
+                    app:layout_constraintEnd_toEndOf="@+id/vking7"
+                    app:layout_constraintStart_toStartOf="@+id/vking7"
+                    app:layout_constraintTop_toTopOf="@+id/bauer16" />
+
+                <TextView
+                    android:id="@+id/bauer18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="9"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer17"
+                    app:layout_constraintEnd_toEndOf="@+id/vking8"
+                    app:layout_constraintStart_toStartOf="@+id/vking8"
+                    app:layout_constraintTop_toTopOf="@+id/bauer17" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/bauer2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/bauer2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="2. Bauer"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/bauer3_text"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer1_text"
+                    app:layout_constraintStart_toStartOf="@+id/bauer1_text"
+                    app:layout_constraintTop_toBottomOf="@+id/bauer1_text" />
+
+                <TextView
+                    android:id="@+id/bauer21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer2_text"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer11"
+                    app:layout_constraintStart_toStartOf="@+id/bauer11"
+                    app:layout_constraintTop_toTopOf="@+id/bauer2_text" />
+
+                <TextView
+                    android:id="@+id/bauer22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer21"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer12"
+                    app:layout_constraintStart_toStartOf="@+id/bauer12"
+                    app:layout_constraintTop_toTopOf="@+id/bauer21" />
+
+                <TextView
+                    android:id="@+id/bauer23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer22"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer13"
+                    app:layout_constraintStart_toStartOf="@+id/bauer13"
+                    app:layout_constraintTop_toTopOf="@+id/bauer22" />
+
+                <TextView
+                    android:id="@+id/bauer24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer23"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer14"
+                    app:layout_constraintStart_toStartOf="@+id/bauer14"
+                    app:layout_constraintTop_toTopOf="@+id/bauer23" />
+
+                <TextView
+                    android:id="@+id/bauer25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer24"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer15"
+                    app:layout_constraintStart_toStartOf="@+id/bauer15"
+                    app:layout_constraintTop_toTopOf="@+id/bauer24" />
+
+                <TextView
+                    android:id="@+id/bauer26"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="7"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer25"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer16"
+                    app:layout_constraintStart_toStartOf="@+id/bauer16"
+                    app:layout_constraintTop_toTopOf="@+id/bauer25" />
+
+                <TextView
+                    android:id="@+id/bauer27"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="8"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer26"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer17"
+                    app:layout_constraintStart_toStartOf="@+id/bauer17"
+                    app:layout_constraintTop_toTopOf="@+id/bauer26" />
+
+                <TextView
+                    android:id="@+id/bauer28"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="9"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer27"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer18"
+                    app:layout_constraintStart_toStartOf="@+id/bauer18"
+                    app:layout_constraintTop_toTopOf="@+id/bauer27" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/bauer3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/bauer3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="3. Bauer"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/bauer4_text"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer2_text"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/bauer2_text" />
+
+                <TextView
+                    android:id="@+id/bauer31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer3_text"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer11"
+                    app:layout_constraintStart_toStartOf="@+id/bauer11"
+                    app:layout_constraintTop_toTopOf="@+id/bauer3_text" />
+
+                <TextView
+                    android:id="@+id/bauer32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer31"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer12"
+                    app:layout_constraintStart_toStartOf="@+id/bauer12"
+                    app:layout_constraintTop_toTopOf="@+id/bauer31" />
+
+                <TextView
+                    android:id="@+id/bauer33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer32"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer13"
+                    app:layout_constraintStart_toStartOf="@+id/bauer13"
+                    app:layout_constraintTop_toTopOf="@+id/bauer32" />
+
+                <TextView
+                    android:id="@+id/bauer34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer33"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer14"
+                    app:layout_constraintStart_toStartOf="@+id/bauer14"
+                    app:layout_constraintTop_toTopOf="@+id/bauer33" />
+
+                <TextView
+                    android:id="@+id/bauer35"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer34"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer15"
+                    app:layout_constraintStart_toStartOf="@+id/bauer15"
+                    app:layout_constraintTop_toTopOf="@+id/bauer34" />
+
+                <TextView
+                    android:id="@+id/bauer36"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="7"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer35"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer16"
+                    app:layout_constraintStart_toStartOf="@+id/bauer16"
+                    app:layout_constraintTop_toTopOf="@+id/bauer35" />
+
+                <TextView
+                    android:id="@+id/bauer37"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="8"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer36"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer17"
+                    app:layout_constraintStart_toStartOf="@+id/bauer17"
+                    app:layout_constraintTop_toTopOf="@+id/bauer36" />
+
+                <TextView
+                    android:id="@+id/bauer38"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="9"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer37"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer18"
+                    app:layout_constraintStart_toStartOf="@+id/bauer18"
+                    app:layout_constraintTop_toTopOf="@+id/bauer37" />
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/bauer4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/bauer4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="4. Bauer"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/vizearsch_text"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer2_text"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/bauer2_text" />
+
+                <TextView
+                    android:id="@+id/bauer41"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer4_text"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer11"
+                    app:layout_constraintStart_toStartOf="@+id/bauer11"
+                    app:layout_constraintTop_toTopOf="@+id/bauer4_text" />
+
+                <TextView
+                    android:id="@+id/bauer42"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer41"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer12"
+                    app:layout_constraintStart_toStartOf="@+id/bauer12"
+                    app:layout_constraintTop_toTopOf="@+id/bauer41" />
+
+                <TextView
+                    android:id="@+id/bauer43"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer42"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer13"
+                    app:layout_constraintStart_toStartOf="@+id/bauer13"
+                    app:layout_constraintTop_toTopOf="@+id/bauer42" />
+
+                <TextView
+                    android:id="@+id/bauer44"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer43"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer14"
+                    app:layout_constraintStart_toStartOf="@+id/bauer14"
+                    app:layout_constraintTop_toTopOf="@+id/bauer43" />
+
+                <TextView
+                    android:id="@+id/bauer45"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer44"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer15"
+                    app:layout_constraintStart_toStartOf="@+id/bauer15"
+                    app:layout_constraintTop_toTopOf="@+id/bauer44" />
+
+                <TextView
+                    android:id="@+id/bauer46"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="7"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer45"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer16"
+                    app:layout_constraintStart_toStartOf="@+id/bauer16"
+                    app:layout_constraintTop_toTopOf="@+id/bauer45" />
+
+                <TextView
+                    android:id="@+id/bauer47"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="8"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer46"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer17"
+                    app:layout_constraintStart_toStartOf="@+id/bauer17"
+                    app:layout_constraintTop_toTopOf="@+id/bauer46" />
+
+                <TextView
+                    android:id="@+id/bauer48"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="9"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bauer47"
+                    app:layout_constraintEnd_toEndOf="@+id/bauer18"
+                    app:layout_constraintStart_toStartOf="@+id/bauer18"
+                    app:layout_constraintTop_toTopOf="@+id/bauer47" />
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/vizearsch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/vizearsch_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Vize-Arsch"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/arsch_text"
+                    app:layout_constraintEnd_toEndOf="@+id/king_text"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="@+id/king_text" />
+
+                <TextView
+                    android:id="@+id/varsch1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/vizearsch_text"
+                    app:layout_constraintEnd_toEndOf="@+id/king1"
+                    app:layout_constraintHorizontal_bias="0.49"
+                    app:layout_constraintStart_toStartOf="@+id/king1"
+                    app:layout_constraintTop_toTopOf="@+id/vizearsch_text"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/varsch2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_marginBottom="1dp"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/varsch1"
+                    app:layout_constraintEnd_toEndOf="@+id/king2"
+                    app:layout_constraintStart_toStartOf="@+id/king2"
+                    app:layout_constraintTop_toTopOf="@+id/varsch1" />
+
+                <TextView
+                    android:id="@+id/varsch3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/varsch2"
+                    app:layout_constraintEnd_toEndOf="@+id/king3"
+                    app:layout_constraintStart_toStartOf="@+id/king3"
+                    app:layout_constraintTop_toTopOf="@+id/varsch2" />
+
+                <TextView
+                    android:id="@+id/varsch4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/varsch3"
+                    app:layout_constraintEnd_toEndOf="@+id/king4"
+                    app:layout_constraintStart_toStartOf="@+id/king4"
+                    app:layout_constraintTop_toTopOf="@+id/varsch3" />
+
+                <TextView
+                    android:id="@+id/varsch5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/varsch4"
+                    app:layout_constraintEnd_toEndOf="@+id/king5"
+                    app:layout_constraintStart_toStartOf="@+id/king5"
+                    app:layout_constraintTop_toTopOf="@+id/varsch4" />
+
+                <TextView
+                    android:id="@+id/varsch6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="7"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/varsch5"
+                    app:layout_constraintEnd_toEndOf="@+id/king6"
+                    app:layout_constraintStart_toStartOf="@+id/king6"
+                    app:layout_constraintTop_toTopOf="@+id/varsch5" />
+
+                <TextView
+                    android:id="@+id/varsch7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="8"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/varsch6"
+                    app:layout_constraintEnd_toEndOf="@+id/king7"
+                    app:layout_constraintStart_toStartOf="@+id/king7"
+                    app:layout_constraintTop_toTopOf="@+id/varsch6" />
+
+                <TextView
+                    android:id="@+id/varsch8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="9"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/varsch7"
+                    app:layout_constraintEnd_toEndOf="@+id/king8"
+                    app:layout_constraintStart_toStartOf="@+id/king8"
+                    app:layout_constraintTop_toBottomOf="@+id/bauer47" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/arsch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/arsch_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Arschloch"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/king_text"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/king_text" />
+
+                <TextView
+                    android:id="@+id/arsch1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/arsch_text"
+                    app:layout_constraintEnd_toEndOf="@+id/king1"
+                    app:layout_constraintHorizontal_bias="0.51"
+                    app:layout_constraintStart_toStartOf="@+id/king1"
+                    app:layout_constraintTop_toTopOf="@+id/arsch_text"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/arsch2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/arsch1"
+                    app:layout_constraintEnd_toEndOf="@+id/king2"
+                    app:layout_constraintStart_toStartOf="@+id/king2"
+                    app:layout_constraintTop_toTopOf="@+id/arsch1" />
+
+                <TextView
+                    android:id="@+id/arsch3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/arsch2"
+                    app:layout_constraintEnd_toEndOf="@+id/king3"
+                    app:layout_constraintStart_toStartOf="@+id/king3"
+                    app:layout_constraintTop_toTopOf="@+id/arsch2" />
+
+                <TextView
+                    android:id="@+id/arsch4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/arsch3"
+                    app:layout_constraintEnd_toEndOf="@+id/king4"
+                    app:layout_constraintStart_toStartOf="@+id/king4"
+                    app:layout_constraintTop_toTopOf="@+id/arsch3" />
+
+                <TextView
+                    android:id="@+id/arsch5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/arsch4"
+                    app:layout_constraintEnd_toEndOf="@+id/king5"
+                    app:layout_constraintStart_toStartOf="@+id/king5"
+                    app:layout_constraintTop_toTopOf="@+id/arsch4" />
+
+                <TextView
+                    android:id="@+id/arsch6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="7"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/arsch5"
+                    app:layout_constraintEnd_toEndOf="@+id/king6"
+                    app:layout_constraintStart_toStartOf="@+id/king6"
+                    app:layout_constraintTop_toTopOf="@+id/arsch5" />
+
+                <TextView
+                    android:id="@+id/arsch7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="8"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/arsch6"
+                    app:layout_constraintEnd_toEndOf="@+id/king7"
+                    app:layout_constraintStart_toStartOf="@+id/king7"
+                    app:layout_constraintTop_toTopOf="@+id/arsch6" />
+
+                <TextView
+                    android:id="@+id/arsch8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="9"
+                    android:text="00"
+                    android:textColor="@color/textcolorDark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/arsch7"
+                    app:layout_constraintEnd_toEndOf="@+id/king8"
+                    app:layout_constraintStart_toStartOf="@+id/king8"
+                    app:layout_constraintTop_toTopOf="@+id/arsch7" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/arschloch_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Titel"
+            android:textColor="@color/colorAccent"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/golfen_table"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+
