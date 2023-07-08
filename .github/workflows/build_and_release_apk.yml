@@ -1,4 +1,4 @@
-name: Android CI
+name: Build and release app to github releases
 
 env:
   # The name of the main module repository
@@ -78,3 +78,12 @@ jobs:
         with:
           name: ${{ env.date_today }} - ${{ env.playstore_name }} - ${{ env.repository_name }} - App bundle(s) AAB release generated
           path: ${{ env.main_project_module }}/build/outputs/bundle/release/
+      - name: Create Github Release
+        uses: softprops/action-gh-release@v1
+        with:
+           generate_release_notes: true
+           prerelease: true
+           files: |
+              ${{ env.main_project_module }}/build/outputs/apk/debug/
+              ${{ env.main_project_module }}/build/outputs/apk/release/
+              ${{ env.main_project_module }}/build/outputs/bundle/release/
