@@ -82,7 +82,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
            generate_release_notes: true
-           prerelease: true
            files: |
               ${{ env.main_project_module }}/build/outputs/apk/debug/
               ${{ env.main_project_module }}/build/outputs/apk/release/
