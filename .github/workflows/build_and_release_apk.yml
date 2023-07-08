@@ -7,8 +7,6 @@ env:
 on:
   push:
     branches: master
-    tags:
-      - v*
     
   workflow_dispatch:
 
@@ -75,7 +73,12 @@ jobs:
         with:
           name: ${{ env.date_today }} - ${{ env.playstore_name }} - ${{ env.repository_name }} - App bundle(s) AAB release generated
           path: ${{ env.main_project_module }}/build/outputs/bundle/release/
+      - name: Generate release tag
+        id: tag
+        run: |
+          echo "::set-output name=release_tag::UserBuild_$(date +"%Y.%m.%d_%H-%M")"
       - name: Create Github Release
+        if: startsWith(github.ref, 'refs/heads/release/')
         uses: softprops/action-gh-release@v1
         with:
            generate_release_notes: true
