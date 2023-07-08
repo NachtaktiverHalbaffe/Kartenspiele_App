@@ -16,10 +16,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-      - uses: Klemensas/action-autotag@stable
-        with:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          tag_prefix: "v"
+      
       # Set Current Date As Env Variable
       - name: Set current date as env variable
         run: echo "date_today=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
@@ -76,12 +73,12 @@ jobs:
         with:
           name: ${{ env.date_today }} - ${{ env.playstore_name }} - ${{ env.repository_name }} - App bundle(s) AAB release generated
           path: ${{ env.main_project_module }}/build/outputs/bundle/release/
-      - name: Create Github Release
-        if: startsWith(github.ref, 'refs/heads/release/')
-        uses: softprops/action-gh-release@v1
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-           generate_release_notes: true
-           files: |
+            repo_token: "${{ secrets.GITHUB_TOKEN }}"
+            automatic_release_tag: "latest"
+            title: "Automatic master push build"
+            files: |
               ${{ env.main_project_module }}/build/outputs/apk/debug/
               ${{ env.main_project_module }}/build/outputs/apk/release/
               ${{ env.main_project_module }}/build/outputs/bundle/release/
