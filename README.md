@@ -8,3 +8,18 @@ I used a persistend storage with the [Room](https://developer.android.com/traini
 There are still some bugs in it, but after the first working version I stopped working because I hadn't the time and the app does what I need.
 
 I still use this app today at my own, but I don't work on it anymore. Maybe in the future I rewrite this entire app in Flutter.
+
+# License
+Copyright 2023 Felix Brugger
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
